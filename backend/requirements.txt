@@ -1,0 +1,30 @@
+# ==========================================================
+# FORTICO Madagascar — Dépendances Python du backend
+# Python 3.14 · Django 5.2 LTS · DRF 3.18
+# Installation :  pip install -r requirements.txt
+# ==========================================================
+
+# --- Framework ---
+Django==5.2.18
+
+# --- API REST ---
+djangorestframework==3.18.3
+
+# --- Schéma OpenAPI / documentation de l'API ---
+drf-spectacular==0.30.0
+
+# --- Base de données ---
+# psycopg 3 (driver PostgreSQL moderne, supporté par Django 5.2+)
+psycopg[binary]==3.3.6
+
+# --- Traitement d'images (miniatures, validation des formats) ---
+Pillow==13.0.0
+
+# --- Variables d'environnement (fichier .env) ---
+python-dotenv==1.2.4
+
+# --- CORS : autorise le frontend React à appeler l'API ---
+django-cors-headers==4.9.0
+
+# --- Servir les fichiers statiques (CSS/JS) sans serveur de stats ---
+whitenoise==6.12.0

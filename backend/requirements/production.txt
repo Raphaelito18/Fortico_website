@@ -1,0 +1,13 @@
+# ==========================================================
+# FORTICO Madagascar — Dépendances de production (serveur Linux)
+# Installation :  pip install -r requirements/production.txt
+# ==========================================================
+
+-r requirements.txt
+
+# --- Serveur WSGI de production (Linux uniquement) ---
+gunicorn==26.2.0
+
+# En production, on utilise psycopg (sans binaire) pour des
+# performances légèrement supérieures :
+#   pip install "psycopg[c]"==3.3.6

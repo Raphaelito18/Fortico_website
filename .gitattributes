@@ -1,0 +1,26 @@
+# Normalisation des fins de ligne pour éviter les conflits Git
+# sur Windows (core.autocrlf = true) et Linux/macOS.
+* text=auto eol=lf
+
+*.py text diff=python
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+*.env.example text eol=lf
+
+# Fichiers binaires : ne jamais modifier
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
