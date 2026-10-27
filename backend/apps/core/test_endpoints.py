@@ -7,6 +7,7 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core import mail
 from django.test import TestCase, override_settings
 from django.urls import reverse
+from rest_framework import status
 from rest_framework.test import APIClient
 
 from apps.content.models import Article, Category, Certificate, Expertise, Project
@@ -46,6 +47,23 @@ class CoreEndpointCoverageTests(TestCase):
         invalid = {**valid, 'email': 'pas-une-adresse'}
         self.assertEqual(self.client.post('/api/v1/contact/', invalid, format='json').status_code, 400)
         self.assertEqual(ContactMessage.objects.count(), 1)
+
+    def test_contact_ip_ignores_untrusted_forwarded_for_by_default(self):
+        response = self.client.post(
+            '/api/v1/contact/',
+            {
+                'name': 'Jean Exemple',
+                'email': 'jean@example.com',
+                'subject': 'Demande de renseignements',
+                'message': 'Bonjour, je souhaite obtenir des renseignements.',
+            },
+            format='json',
+            REMOTE_ADDR='203.0.113.25',
+            HTTP_X_FORWARDED_FOR='198.51.100.99',
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(ContactMessage.objects.get().ip_address, '203.0.113.25')
 
     @override_settings(CONTACT_NOTIFICATION_EMAIL='team@example.com', EMAIL_BACKEND='django.core.mail.backends.locmem.EmailBackend')
     def test_contact_notification_is_created_by_test_mail_backend(self):

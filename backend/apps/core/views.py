@@ -56,9 +56,11 @@ class ContactMessageCreateView(CreateAPIView):
 
     @staticmethod
     def _get_client_ip(request):
+        proxy_count = settings.REST_FRAMEWORK.get('NUM_PROXIES', 0)
         forwarded = request.META.get('HTTP_X_FORWARDED_FOR', '')
-        if forwarded:
-            return forwarded.split(',')[0].strip()
+        chain = [address.strip() for address in forwarded.split(',') if address.strip()]
+        if proxy_count and len(chain) >= proxy_count:
+            return chain[-proxy_count]
         return request.META.get('REMOTE_ADDR')
 
     @staticmethod

@@ -4,6 +4,8 @@ Vues de l'application « content ».
 
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
+from drf_spectacular.types import OpenApiTypes
+from drf_spectacular.utils import extend_schema
 import mimetypes
 
 from django.http import FileResponse, Http404
@@ -112,6 +114,7 @@ class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
 class CertificateDocumentView(APIView):
     """Télécharge un document seulement après contrôle de publication."""
 
+    @extend_schema(responses={200: OpenApiTypes.BINARY})
     def get(self, request, slug):
         certificate = get_object_or_404(Certificate, slug=slug)
         user = request.user
@@ -161,6 +164,7 @@ class ContentImageView(APIView):
         response['Cache-Control'] = 'no-store'
         return response
 
+    @extend_schema(responses={200: OpenApiTypes.BINARY})
     def get(self, request, kind, slug):
         model = self.content_models.get(kind)
         if model is None:
@@ -170,6 +174,7 @@ class ContentImageView(APIView):
 
 
 class GalleryImageView(ContentImageView):
+    @extend_schema(responses={200: OpenApiTypes.BINARY})
     def get(self, request, slug, image_id):
         project = get_object_or_404(Project, slug=slug)
         image = get_object_or_404(project.gallery_images, pk=image_id)

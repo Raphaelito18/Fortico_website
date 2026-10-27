@@ -12,6 +12,7 @@ Deux bases de données sont supportées automatiquement :
 
 import os
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from dotenv import load_dotenv
 
@@ -71,6 +72,7 @@ DEBUG = env_bool('DJANGO_DEBUG', True)
 
 ALLOWED_HOSTS = env_list('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1')
 PUBLIC_SITE_URL = env_str('PUBLIC_SITE_URL').rstrip('/')
+SEARCH_INDEXING_ENABLED = env_bool('DJANGO_SEARCH_INDEXING_ENABLED', False)
 
 # En production, on refuse d'héberger le site si la clé secrète n'a pas été
 # modifiée : cela évite une mise en production avec la clé de démonstration.
@@ -144,6 +146,9 @@ DB_USER = env_str('DB_USER')
 DB_PASSWORD = env_str('DB_PASSWORD')
 DB_HOST = env_str('DB_HOST', 'localhost')
 DB_PORT = env_str('DB_PORT', '5432')
+DB_CONN_MAX_AGE = env_int('DB_CONN_MAX_AGE', 0)
+if DB_CONN_MAX_AGE < 0:
+    raise RuntimeError('DB_CONN_MAX_AGE doit \u00eatre un entier sup\u00e9rieur ou \u00e9gal \u00e0 z\u00e9ro.')
 
 DB_ENGINE = env_str('DB_ENGINE').lower()
 if not DB_ENGINE:
@@ -173,7 +178,12 @@ if DB_ENGINE in {'postgres', 'postgresql'}:
             'PASSWORD': DB_PASSWORD,
             'HOST': DB_HOST,
             'PORT': DB_PORT,
-            'CONN_MAX_AGE': 60,
+            # Le serveur de d\u00e9veloppement peut cr\u00e9er plusieurs connexions
+            # persistantes par thread. Garder 0 par d\u00e9faut \u00e9vite de saturer
+            # PostgreSQL ; un pool born\u00e9 peut \u00eatre activ\u00e9 explicitement
+            # selon le nombre de workers et la limite de connexions du serveur.
+            'CONN_MAX_AGE': DB_CONN_MAX_AGE,
+            'CONN_HEALTH_CHECKS': True,
         }
     }
 elif DB_ENGINE == 'sqlite':
@@ -258,6 +268,10 @@ MAX_UPLOAD_SIZE_MB = 5
 # --------------------------------------------------------------------------
 # Django REST Framework
 # --------------------------------------------------------------------------
+DRF_NUM_PROXIES = env_int('DRF_NUM_PROXIES', 0)
+if DRF_NUM_PROXIES < 0:
+    raise RuntimeError('DRF_NUM_PROXIES doit \u00eatre un entier sup\u00e9rieur ou \u00e9gal \u00e0 z\u00e9ro.')
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
@@ -273,6 +287,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 12,
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    # Ne faire confiance à X-Forwarded-For qu'après avoir configuré le
+    # nombre de proxys de confiance qui nettoient/complètent cet en-tête.
+    'NUM_PROXIES': DRF_NUM_PROXIES,
     # Limitation du nombre de requêtes : protège l'API des abus.
     'DEFAULT_THROTTLE_RATES': {
         'anon': '60/hour',
@@ -303,7 +320,10 @@ CORS_ALLOWED_ORIGINS = env_list(
     'http://localhost:5173,http://127.0.0.1:5173',
 )
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = CORS_ALLOWED_ORIGINS
+CSRF_TRUSTED_ORIGINS = env_list(
+    'DJANGO_CSRF_TRUSTED_ORIGINS',
+    ','.join(CORS_ALLOWED_ORIGINS),
+)
 
 
 # --------------------------------------------------------------------------
@@ -329,9 +349,13 @@ if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_SSL_REDIRECT = env_bool('DJANGO_SECURE_SSL_REDIRECT', True)
-    SECURE_HSTS_SECONDS = 60 * 60 * 24 * 365
-    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-    SECURE_HSTS_PRELOAD = True
+    # HSTS est activ\u00e9 apr\u00e8s validation du domaine et de tous ses
+    # sous-domaines. Ne pas pr\u00e9charger un domaine avant accord explicite.
+    SECURE_HSTS_SECONDS = env_int('DJANGO_SECURE_HSTS_SECONDS', 0)
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = env_bool(
+        'DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', False,
+    )
+    SECURE_HSTS_PRELOAD = env_bool('DJANGO_SECURE_HSTS_PRELOAD', False)
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -349,6 +373,9 @@ EMAIL_PORT = env_int('EMAIL_PORT', 587)
 EMAIL_HOST_USER = env_str('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = env_str('EMAIL_HOST_PASSWORD', '')
 EMAIL_USE_TLS = env_bool('EMAIL_USE_TLS', True)
+EMAIL_USE_SSL = env_bool('EMAIL_USE_SSL', False)
+if EMAIL_USE_TLS and EMAIL_USE_SSL:
+    raise RuntimeError('EMAIL_USE_TLS et EMAIL_USE_SSL ne peuvent pas \u00eatre activ\u00e9s ensemble.')
 DEFAULT_FROM_EMAIL = env_str('DEFAULT_FROM_EMAIL', 'no-reply@fortico.local')
 
 # Adresse de l'expéditeur des notifications « nouveau message de contact ».
@@ -367,3 +394,72 @@ ADMIN_PAGINATE_BY = 25
 
 # Identifiant du site (utilisé par l'admin et les cookies).
 SITE_ID = 1
+
+
+# --------------------------------------------------------------------------
+# Garde-fous de production et journalisation
+# --------------------------------------------------------------------------
+def is_confirmed_https_origin(value: str) -> bool:
+    parsed = urlsplit(value)
+    return (
+        parsed.scheme == 'https'
+        and bool(parsed.netloc)
+        and parsed.path in {'', '/'}
+        and not parsed.query
+        and not parsed.fragment
+        and not parsed.username
+        and not parsed.password
+        and parsed.hostname not in {'localhost', '127.0.0.1', '::1'}
+    )
+
+
+if not DEBUG:
+    if not ALLOWED_HOSTS or any(host in {'localhost', '127.0.0.1', '*'} for host in ALLOWED_HOSTS):
+        raise RuntimeError('DJANGO_ALLOWED_HOSTS doit contenir uniquement les h\u00f4tes confirm\u00e9s en production.')
+    if DATABASES['default']['ENGINE'] != 'django.db.backends.postgresql':
+        raise RuntimeError('La production FORTICO doit utiliser PostgreSQL (DB_ENGINE=postgresql).')
+    if any(not is_confirmed_https_origin(origin) for origin in CORS_ALLOWED_ORIGINS):
+        raise RuntimeError('Les origines CORS de production doivent \u00eatre des origines HTTPS confirm\u00e9es.')
+    if any(not is_confirmed_https_origin(origin) for origin in CSRF_TRUSTED_ORIGINS):
+        raise RuntimeError('Les origines CSRF de production doivent \u00eatre des origines HTTPS confirm\u00e9es.')
+    public_site = urlsplit(PUBLIC_SITE_URL)
+    if (
+        public_site.scheme != 'https' or not public_site.netloc
+        or public_site.path not in {'', '/'} or public_site.query or public_site.fragment
+        or public_site.username or public_site.password
+        or public_site.hostname in {'localhost', '127.0.0.1', '::1'}
+    ):
+        raise RuntimeError('PUBLIC_SITE_URL doit être l’origine HTTPS confirmée du site public.')
+    frontend_site = urlsplit(FRONTEND_URL)
+    if (
+        frontend_site.scheme != 'https' or not frontend_site.netloc
+        or frontend_site.path not in {'', '/'} or frontend_site.query or frontend_site.fragment
+        or frontend_site.username or frontend_site.password
+        or frontend_site.hostname in {'localhost', '127.0.0.1', '::1'}
+    ):
+        raise RuntimeError('FRONTEND_URL doit être une URL HTTPS confirmée en production.')
+
+LOG_LEVEL = env_str('DJANGO_LOG_LEVEL', 'INFO').upper()
+if LOG_LEVEL not in {'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'}:
+    LOG_LEVEL = 'INFO'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '{asctime} {levelname} {name}: {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+    },
+    'root': {'handlers': ['console'], 'level': LOG_LEVEL},
+    'loggers': {
+        'django.request': {'handlers': ['console'], 'level': 'WARNING', 'propagate': False},
+    },
+}

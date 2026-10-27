@@ -17,7 +17,12 @@ def _public_origin():
 
 
 def robots_txt(request):
-    lines = ['User-agent: *', 'Allow: /', 'Disallow: /admin/', 'Disallow: /api/']
+    lines = ['User-agent: *']
+    if not settings.SEARCH_INDEXING_ENABLED:
+        lines.append('Disallow: /')
+        return HttpResponse('\n'.join(lines) + '\n', content_type='text/plain; charset=utf-8')
+
+    lines.extend(['Allow: /', 'Disallow: /admin/', 'Disallow: /api/'])
     origin = _public_origin()
     if origin:
         lines.append(f'Sitemap: {origin}/sitemap.xml')
@@ -25,6 +30,9 @@ def robots_txt(request):
 
 
 def sitemap_xml(request):
+    if not settings.SEARCH_INDEXING_ENABLED:
+        return HttpResponse('Search indexing is disabled.\n', status=503, content_type='text/plain; charset=utf-8')
+
     origin = _public_origin()
     if not origin:
         return HttpResponse('PUBLIC_SITE_URL is not configured.\n', status=503, content_type='text/plain; charset=utf-8')

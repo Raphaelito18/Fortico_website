@@ -22,8 +22,14 @@ class PublicCrawlerFileTests(TestCase):
         response = self.client.get('/robots.txt')
         self.assertEqual(response.status_code, 200)
         self.assertNotIn('Sitemap:', response.content.decode())
+        self.assertIn('Disallow: /', response.content.decode())
 
-    @override_settings(PUBLIC_SITE_URL='https://fortico.example')
+    @override_settings(PUBLIC_SITE_URL='https://fortico.example', SEARCH_INDEXING_ENABLED=False)
+    def test_indexing_stays_disabled_until_explicitly_enabled(self):
+        self.assertEqual(self.client.get('/sitemap.xml').status_code, 503)
+        self.assertIn('Disallow: /', self.client.get('/robots.txt').content.decode())
+
+    @override_settings(PUBLIC_SITE_URL='https://fortico.example', SEARCH_INDEXING_ENABLED=True)
     def test_sitemap_contains_public_routes_and_only_published_detail_slugs(self):
         Project.objects.create(title='Visible project', slug='visible-project', is_published=True)
         Project.objects.create(title='Draft project', slug='draft-project', is_published=False)
@@ -40,7 +46,7 @@ class PublicCrawlerFileTests(TestCase):
         self.assertNotIn('draft-article', body)
         self.assertIn('https://fortico.example/contact/', body)
 
-    @override_settings(PUBLIC_SITE_URL='https://fortico.example')
+    @override_settings(PUBLIC_SITE_URL='https://fortico.example', SEARCH_INDEXING_ENABLED=True)
     def test_robots_references_the_configured_sitemap(self):
         response = self.client.get('/robots.txt')
         self.assertIn('Sitemap: https://fortico.example/sitemap.xml', response.content.decode())
