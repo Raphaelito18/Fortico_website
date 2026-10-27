@@ -1,0 +1,1807 @@
+{
+  "browser": "155.0.8059.85",
+  "baseUrl": "http://127.0.0.1:5173",
+  "matrix": [
+    {
+      "name": "home",
+      "path": "/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Accueil — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": " FORTICO · MADAGASCAR\n\nDes solutions techniques\npour un monde\nplus intelligent.\n\nNous concevons, intégrons et maintenons des solutions fiables en électronique, électricité, instrumentation industrielle, systèmes embarqués et automatisation.\n\nDécouvri",
+      "footerVisible": true,
+      "footerBottom": 1790.984375,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/hero-engineering.svg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "expertises",
+      "path": "/expertises",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Nos expertises — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "SAVOIR-FAIRE\n\nNos expertises\n\nLes domaines d’intervention publiés par FORTICO Madagascar.\n\nAucune expertise publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "realisations",
+      "path": "/realisations",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Réalisations — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "PROJETS\n\nNos réalisations\n\nUne sélection des projets publiés par l’entreprise.\n\nAucune réalisation publiée pour le moment. Les projets seront ajoutés après validation par FORTICO.",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-realisation-empty",
+      "path": "/realisations/qa-route-inexistante",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "entreprise",
+      "path": "/entreprise",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "À propos — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "FORTICO MADAGASCAR\n\nÀ propos de FORTICO\n\nLes informations institutionnelles seront publiées ici après validation par l’équipe FORTICO.\n\nÀ PROPOS\n\nPrésentation\n\nLa présentation officielle de l’entreprise est en préparation.\n\nNOTRE MISSION\n\nMission\n\nLe",
+      "footerVisible": true,
+      "footerBottom": 1027.3125,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "certificats",
+      "path": "/certificats",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Certificats et références — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "RÉFÉRENCES\n\nCertificats & références\n\nLes documents et références de l’entreprise seront présentés dans cet espace.\n\nAucun certificat ou référence publié pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "actualites",
+      "path": "/actualites",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Actualités — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "JOURNAL\n\nActualités & publications\n\nLes nouvelles et publications de FORTICO Madagascar.\n\nAucune actualité publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-article-empty",
+      "path": "/actualites/qa-route-inexistante",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "contact",
+      "path": "/contact",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Contact — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "CONTACT\n\nParlons de votre projet.\n\nÉcrivez à l’équipe FORTICO Madagascar. Les coordonnées directes seront affichées dès leur confirmation.\n\nVOTRE MESSAGE\n\nLes champs marqués d’un astérisque sont obligatoires. Votre demande est transmise à l’équipe FO",
+      "footerVisible": true,
+      "footerBottom": 1294.328125,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "404",
+      "path": "/qa-page-inexistante",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 800,
+      "viewportHeight": 800,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Accueil — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": " FORTICO · MADAGASCAR\n\nDes solutions techniques\npour un monde\nplus intelligent.\n\nNous concevons, intégrons et maintenons des solutions fiables en électronique, électricité, instrumentation industrielle, systèmes embarqués et automatisation.\n\nDécouvri",
+      "footerVisible": true,
+      "footerBottom": 1804.890625,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/hero-engineering.svg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "expertises",
+      "path": "/expertises",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Nos expertises — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "SAVOIR-FAIRE\n\nNos expertises\n\nLes domaines d’intervention publiés par FORTICO Madagascar.\n\nAucune expertise publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "realisations",
+      "path": "/realisations",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Réalisations — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "PROJETS\n\nNos réalisations\n\nUne sélection des projets publiés par l’entreprise.\n\nAucune réalisation publiée pour le moment. Les projets seront ajoutés après validation par FORTICO.",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-realisation-empty",
+      "path": "/realisations/qa-route-inexistante",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "entreprise",
+      "path": "/entreprise",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "À propos — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "FORTICO MADAGASCAR\n\nÀ propos de FORTICO\n\nLes informations institutionnelles seront publiées ici après validation par l’équipe FORTICO.\n\nÀ PROPOS\n\nPrésentation\n\nLa présentation officielle de l’entreprise est en préparation.\n\nNOTRE MISSION\n\nMission\n\nLe",
+      "footerVisible": true,
+      "footerBottom": 1003.921875,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "certificats",
+      "path": "/certificats",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Certificats et références — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "RÉFÉRENCES\n\nCertificats & références\n\nLes documents et références de l’entreprise seront présentés dans cet espace.\n\nAucun certificat ou référence publié pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "actualites",
+      "path": "/actualites",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Actualités — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "JOURNAL\n\nActualités & publications\n\nLes nouvelles et publications de FORTICO Madagascar.\n\nAucune actualité publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-article-empty",
+      "path": "/actualites/qa-route-inexistante",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "contact",
+      "path": "/contact",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Contact — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "CONTACT\n\nParlons de votre projet.\n\nÉcrivez à l’équipe FORTICO Madagascar. Les coordonnées directes seront affichées dès leur confirmation.\n\nVOTRE MESSAGE\n\nLes champs marqués d’un astérisque sont obligatoires. Votre demande est transmise à l’équipe FO",
+      "footerVisible": true,
+      "footerBottom": 1271.578125,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "404",
+      "path": "/qa-page-inexistante",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 844,
+      "viewportHeight": 844,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Accueil — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": " FORTICO · MADAGASCAR\n\nDes solutions techniques\npour un monde plus intelligent.\n\nNous concevons, intégrons et maintenons des solutions fiables en électronique, électricité, instrumentation industrielle, systèmes embarqués et automatisation.\n\nDécouvri",
+      "footerVisible": true,
+      "footerBottom": 1600.40625,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/hero-engineering.svg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "expertises",
+      "path": "/expertises",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Nos expertises — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "SAVOIR-FAIRE\n\nNos expertises\n\nLes domaines d’intervention publiés par FORTICO Madagascar.\n\nAucune expertise publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "realisations",
+      "path": "/realisations",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Réalisations — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "PROJETS\n\nNos réalisations\n\nUne sélection des projets publiés par l’entreprise.\n\nAucune réalisation publiée pour le moment. Les projets seront ajoutés après validation par FORTICO.",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-realisation-empty",
+      "path": "/realisations/qa-route-inexistante",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "entreprise",
+      "path": "/entreprise",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "À propos — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "FORTICO MADAGASCAR\n\nÀ propos de FORTICO\n\nLes informations institutionnelles seront publiées ici après validation par l’équipe FORTICO.\n\nÀ PROPOS\n\nPrésentation\n\nLa présentation officielle de l’entreprise est en préparation.\n\nNOTRE MISSION\n\nMission\n\nLe",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "certificats",
+      "path": "/certificats",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Certificats et références — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "RÉFÉRENCES\n\nCertificats & références\n\nLes documents et références de l’entreprise seront présentés dans cet espace.\n\nAucun certificat ou référence publié pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "actualites",
+      "path": "/actualites",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Actualités — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "JOURNAL\n\nActualités & publications\n\nLes nouvelles et publications de FORTICO Madagascar.\n\nAucune actualité publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-article-empty",
+      "path": "/actualites/qa-route-inexistante",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "contact",
+      "path": "/contact",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Contact — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "CONTACT\n\nParlons de votre projet.\n\nÉcrivez à l’équipe FORTICO Madagascar. Les coordonnées directes seront affichées dès leur confirmation.\n\nVOTRE MESSAGE\n\nLes champs marqués d’un astérisque sont obligatoires. Votre demande est transmise à l’équipe FO",
+      "footerVisible": true,
+      "footerBottom": 1137.3125,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "404",
+      "path": "/qa-page-inexistante",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 1024,
+      "viewportHeight": 1024,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Accueil — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": " FORTICO · MADAGASCAR\n\nDes solutions techniques\npour un monde plus intelligent.\n\nNous concevons, intégrons et maintenons des solutions fiables en électronique, électricité, instrumentation industrielle, systèmes embarqués et automatisation.\n\nDécouvri",
+      "footerVisible": true,
+      "footerBottom": 1248.515625,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/hero-engineering.svg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "expertises",
+      "path": "/expertises",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Nos expertises — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "SAVOIR-FAIRE\n\nNos expertises\n\nLes domaines d’intervention publiés par FORTICO Madagascar.\n\nAucune expertise publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "realisations",
+      "path": "/realisations",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Réalisations — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "PROJETS\n\nNos réalisations\n\nUne sélection des projets publiés par l’entreprise.\n\nAucune réalisation publiée pour le moment. Les projets seront ajoutés après validation par FORTICO.",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-realisation-empty",
+      "path": "/realisations/qa-route-inexistante",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "entreprise",
+      "path": "/entreprise",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "À propos — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "FORTICO MADAGASCAR\n\nÀ propos de FORTICO\n\nLes informations institutionnelles seront publiées ici après validation par l’équipe FORTICO.\n\nÀ PROPOS\n\nPrésentation\n\nLa présentation officielle de l’entreprise est en préparation.\n\nNOTRE MISSION\n\nMission\n\nLe",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "certificats",
+      "path": "/certificats",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Certificats et références — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "RÉFÉRENCES\n\nCertificats & références\n\nLes documents et références de l’entreprise seront présentés dans cet espace.\n\nAucun certificat ou référence publié pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "actualites",
+      "path": "/actualites",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Actualités — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "JOURNAL\n\nActualités & publications\n\nLes nouvelles et publications de FORTICO Madagascar.\n\nAucune actualité publiée pour le moment.",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "detail-article-empty",
+      "path": "/actualites/qa-route-inexistante",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "contact",
+      "path": "/contact",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Contact — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "CONTACT\n\nParlons de votre projet.\n\nÉcrivez à l’équipe FORTICO Madagascar. Les coordonnées directes seront affichées dès leur confirmation.\n\nVOTRE MESSAGE\n\nLes champs marqués d’un astérisque sont obligatoires. Votre demande est transmise à l’équipe FO",
+      "footerVisible": true,
+      "footerBottom": 1128.375,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    },
+    {
+      "name": "404",
+      "path": "/qa-page-inexistante",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": false,
+      "shortPageFooterGap": false,
+      "title": "Page introuvable — FORTICO Madagascar",
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "mainText": "ERREUR 404\n\nCette page n’existe pas.\n\nLe lien est peut-être incorrect ou la page a été déplacée.\n\nRetour à l’accueil\n→",
+      "footerVisible": true,
+      "footerBottom": 900,
+      "viewportHeight": 900,
+      "imageStates": [
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5173/fortico-logo.jpg",
+          "loaded": true
+        }
+      ],
+      "brokenImages": []
+    }
+  ],
+  "interactions": {
+    "mobileMenu-360": {
+      "opened": true,
+      "navigatedTo": "/certificats",
+      "collapsedAfterNavigation": true
+    },
+    "mobileMenu-390": {
+      "opened": true,
+      "navigatedTo": "/certificats",
+      "collapsedAfterNavigation": true
+    },
+    "mobileMenu-768": {
+      "opened": true,
+      "navigatedTo": "/certificats",
+      "collapsedAfterNavigation": true
+    },
+    "contactClientValidation": {
+      "emptyFormBlocked": true,
+      "invalidEmailBlocked": true,
+      "invalidSubmissionBlocked": true
+    },
+    "contactSubmission": {
+      "status": 201,
+      "requestUrl": "http://127.0.0.1:5173/api/v1/contact/",
+      "requestMethod": "POST",
+      "authorizationHeaderPresent": false,
+      "response": {
+        "message": "Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais."
+      },
+      "successVisible": true,
+      "formReset": true,
+      "buttonReenabled": true,
+      "marker": "QA-BROWSER-1793127889269-maetsn"
+    },
+    "invalidApiSubmission": {
+      "status": 400,
+      "message": "Assurez-vous que ce champ comporte au moins 2 caractères. Saisissez une adresse e-mail valide. Assurez-vous que ce champ comporte au moins 3 caractères. Assurez-vous que ce champ comporte au moins 10 caractères.",
+      "buttonReenabled": true
+    },
+    "apiErrorState": "Le contenu est momentanément indisponible.",
+    "rateLimitState": {
+      "message": "Trop de demandes. Réessayez plus tard.",
+      "buttonReenabled": true,
+      "responseStatus": 429
+    },
+    "detailCards": {
+      "projectDetailWorks": true,
+      "articleDetailWorks": true,
+      "fixtureStoredInDatabase": false
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "consoleWarnings": [],
+  "resourceErrors": [
+    {
+      "pageUrl": "http://127.0.0.1:5173/realisations/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/actualites/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/realisations/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/actualites/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/realisations/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/actualites/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/realisations/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/actualites/qa-route-inexistante",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/contact",
+      "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+      "location": "http://127.0.0.1:5173/api/v1/contact/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/expertises",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": "http://127.0.0.1:5173/api/v1/expertises/"
+    },
+    {
+      "pageUrl": "http://127.0.0.1:5173/contact",
+      "text": "Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+      "location": "http://127.0.0.1:5173/api/v1/contact/"
+    }
+  ],
+  "failedRequests": [],
+  "requestAborts": [
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/certificates/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/fixture-qa-projet/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/fixture-qa-article/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/company/",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/projects/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/articles/qa-route-inexistante/",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/contact/",
+      "status": 400
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/expertises/",
+      "status": 503
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/contact/",
+      "status": 429
+    }
+  ],
+  "imageFailures": []
+}
