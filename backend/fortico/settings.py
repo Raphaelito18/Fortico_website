@@ -5,15 +5,16 @@ Toute la configuration sensible est lue dans les variables d'environnement
 (fichier « backend/.env »), afin qu'aucun secret ne soit stocké dans Git.
 
 Deux bases de données sont supportées automatiquement :
-  - PostgreSQL (production, et développement si les variables DB_* sont
-    renseignées) ;
+  - PostgreSQL via DATABASE_URL ou les variables DB_* (production et
+    développement configuré) ;
   - SQLite (repli pour le développement local, sans configuration).
 """
 
 import os
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, unquote, urlsplit
 
+from django.core.exceptions import ImproperlyConfigured
 from dotenv import load_dotenv
 
 # --------------------------------------------------------------------------
@@ -141,6 +142,50 @@ ASGI_APPLICATION = 'fortico.asgi.application'
 # --------------------------------------------------------------------------
 # Base de données
 # --------------------------------------------------------------------------
+def postgres_database_from_url(database_url: str, conn_max_age: int = 0) -> dict:
+    """Parse une URL PostgreSQL (notamment DATABASE_URL de Render) sans l'exposer."""
+    try:
+        parsed = urlsplit(database_url)
+        hostname = parsed.hostname
+        port = parsed.port
+        username = unquote(parsed.username or '')
+        password = unquote(parsed.password or '')
+    except ValueError as exc:
+        raise ImproperlyConfigured('DATABASE_URL PostgreSQL est invalide.') from exc
+
+    database_name = unquote(parsed.path[1:]) if parsed.path.startswith('/') else ''
+    if (
+        parsed.scheme.lower() not in {'postgres', 'postgresql'}
+        or not hostname
+        or not username
+        or not password
+        or not database_name
+        or parsed.fragment
+        or '/' in parsed.path[1:]
+    ):
+        raise ImproperlyConfigured(
+            'DATABASE_URL doit être une URL PostgreSQL complète avec hôte, identifiants et base.'
+        )
+
+    try:
+        query_options = dict(parse_qsl(parsed.query, keep_blank_values=False, strict_parsing=True))
+    except ValueError as exc:
+        raise ImproperlyConfigured('Les options de DATABASE_URL sont invalides.') from exc
+
+    return {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': database_name,
+        'USER': username,
+        'PASSWORD': password,
+        'HOST': hostname,
+        'PORT': str(port or ''),
+        'CONN_MAX_AGE': conn_max_age,
+        'CONN_HEALTH_CHECKS': True,
+        'OPTIONS': query_options,
+    }
+
+
+DATABASE_URL = env_str('DATABASE_URL')
 DB_NAME = env_str('DB_NAME')
 DB_USER = env_str('DB_USER')
 DB_PASSWORD = env_str('DB_PASSWORD')
@@ -151,11 +196,20 @@ if DB_CONN_MAX_AGE < 0:
     raise RuntimeError('DB_CONN_MAX_AGE doit \u00eatre un entier sup\u00e9rieur ou \u00e9gal \u00e0 z\u00e9ro.')
 
 DB_ENGINE = env_str('DB_ENGINE').lower()
-if not DB_ENGINE:
+if DATABASE_URL:
+    if DB_ENGINE and DB_ENGINE not in {'postgres', 'postgresql'}:
+        raise RuntimeError('DATABASE_URL ne peut pas être combinée avec DB_ENGINE=sqlite.')
+    # DATABASE_URL est prioritaire sur DB_* afin qu'une configuration Render
+    # ne retombe jamais sur la base SQLite locale ou sur d'anciens paramètres.
+    DATABASES = {
+        'default': postgres_database_from_url(DATABASE_URL, DB_CONN_MAX_AGE),
+    }
+    DB_ENGINE = 'postgresql'
+elif not DB_ENGINE:
     # CompatibilitÃ© avec la configuration historique : DB_* remplis implique PostgreSQL.
     DB_ENGINE = 'postgresql' if any((DB_NAME, DB_USER, DB_PASSWORD)) else 'sqlite'
 
-if DB_ENGINE in {'postgres', 'postgresql'}:
+if not DATABASE_URL and DB_ENGINE in {'postgres', 'postgresql'}:
     missing_db_values = [
         name for name, value in (
             ('DB_NAME', DB_NAME),
@@ -186,7 +240,7 @@ if DB_ENGINE in {'postgres', 'postgresql'}:
             'CONN_HEALTH_CHECKS': True,
         }
     }
-elif DB_ENGINE == 'sqlite':
+elif not DATABASE_URL and DB_ENGINE == 'sqlite':
     # Repli SQLite : pratique pour démarrer sans installer PostgreSQL.
     DATABASES = {
         'default': {
@@ -194,7 +248,7 @@ elif DB_ENGINE == 'sqlite':
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-else:
+elif not DATABASE_URL:
     raise RuntimeError('DB_ENGINE doit valoir "postgresql" ou "sqlite".')
 
 

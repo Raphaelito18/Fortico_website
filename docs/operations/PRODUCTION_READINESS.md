@@ -48,7 +48,7 @@ Avec `DJANGO_DEBUG=False`, les réglages refusent maintenant le démarrage si le
 ## Ordre de mise en service (à exécuter plus tard, après choix de l'hébergeur)
 
 1. Provisionner un serveur pris en charge et un PostgreSQL isolé pour la production ; restreindre le réseau et créer un rôle applicatif au moindre privilège. Ne pas réutiliser la base de développement.
-2. Installer les versions Python/Node compatibles avec `backend/requirements.txt` et le lockfile frontend (`npm ci`), sans mise à jour générale des dépendances. Le dépôt fournit WSGI/ASGI Django mais aucun serveur de processus WSGI de production n'est actuellement épinglé : choisir et verrouiller le serveur WSGI/process manager après décision de plateforme ; ne jamais utiliser `runserver` en production.
+2. Installer les versions Python/Node compatibles avec `backend/requirements.txt` et le lockfile frontend (`npm ci`), sans mise à jour générale des dépendances. `backend/requirements/production.txt` épingle Gunicorn pour le serveur WSGI ; ne jamais utiliser `runserver` en production.
 3. Injecter les secrets et variables de configuration par le gestionnaire de secrets de l'hébergeur. Vérifier `DJANGO_DEBUG=False`, les hôtes, origines et moteur PostgreSQL avant démarrage.
 4. Construire le frontend reproductiblement (`npm ci`, `npm run build`) avec l'URL API et le domaine public confirmés. Vérifier le bundle : aucune clé/valeur secrète.
 5. Construire l'environnement Python, puis exécuter `python manage.py check --deploy`. Résoudre les avertissements de déploiement applicables ; tester la configuration HTTPS derrière un proxy dans un environnement de préproduction.
