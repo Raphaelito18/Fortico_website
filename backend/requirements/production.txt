@@ -3,7 +3,7 @@
 # Installation :  pip install -r requirements/production.txt
 # ==========================================================
 
--r requirements.txt
+-r ../requirements.txt
 
 # --- Serveur WSGI de production (Linux uniquement) ---
 gunicorn==26.2.0
