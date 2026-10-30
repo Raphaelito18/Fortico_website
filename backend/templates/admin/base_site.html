@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | FORTICO Administration{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name" class="fortico-branding">
+    <a href="{% url 'admin:index' %}" aria-label="FORTICO Administration">
+      <img src="{% static 'admin/brand/fortico-logo.jpg' %}" alt="FORTICO" class="fortico-branding__logo">
+      <span class="fortico-branding__label">Administration</span>
+    </a>
+  </h1>
+{% endblock %}
+
+{% block responsive %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'admin/css/fortico_admin.css' %}">
+{% endblock %}

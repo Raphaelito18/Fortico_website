@@ -12,9 +12,9 @@ from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from fortico.seo import robots_txt, sitemap_xml
 
-admin.site.site_header = 'Administration FORTICO'
-admin.site.site_title = 'FORTICO Madagascar'
-admin.site.index_title = 'Gestion des contenus du site'
+admin.site.site_header = 'FORTICO Administration'
+admin.site.site_title = 'FORTICO Administration'
+admin.site.index_title = 'Gestion des contenus FORTICO'
 
 urlpatterns = [
     path('robots.txt', robots_txt, name='robots-txt'),

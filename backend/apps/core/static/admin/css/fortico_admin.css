@@ -1,0 +1,734 @@
+:root {
+  --fortico-navy: #14263f;
+  --fortico-navy-deep: #0d1c30;
+  --fortico-teal: #159b8d;
+  --fortico-teal-dark: #0b796f;
+  --fortico-ink: #243448;
+  --fortico-muted: #6d7b8b;
+  --fortico-line: #e2e9ee;
+  --fortico-pale: #f3f7f9;
+  --fortico-white: #fff;
+  --fortico-danger: #a93d46;
+}
+
+html,
+body {
+  color: var(--fortico-ink);
+  background: var(--fortico-pale);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+#container {
+  min-width: 320px;
+  background: var(--fortico-pale);
+}
+
+#header {
+  min-height: 78px;
+  padding: 12px 28px;
+  color: var(--fortico-white);
+  background: var(--fortico-navy);
+  box-shadow: 0 3px 14px rgb(13 28 48 / 12%);
+}
+
+#branding {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+#branding h1,
+#branding h1 a {
+  color: var(--fortico-white);
+}
+
+.fortico-branding {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+.fortico-branding a {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.fortico-branding__logo {
+  display: block;
+  width: 174px;
+  height: auto;
+  border-radius: 5px;
+  background: var(--fortico-white);
+}
+
+.fortico-branding__label {
+  padding-left: 16px;
+  border-left: 1px solid rgb(255 255 255 / 34%);
+  font-size: 15px;
+  font-weight: 650;
+}
+
+#user-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d7e2ec;
+  font-size: 12px;
+}
+
+#user-tools a,
+#user-tools button,
+#user-tools .theme-toggle {
+  color: var(--fortico-white);
+}
+
+#user-tools a:hover,
+#user-tools button:hover {
+  color: #8be0d4;
+}
+
+#logout-form {
+  display: inline;
+}
+
+#logout-form button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.breadcrumbs {
+  padding: 12px 28px;
+  color: var(--fortico-muted);
+  border-bottom: 1px solid var(--fortico-line);
+  background: var(--fortico-white);
+  font-size: 12px;
+}
+
+.breadcrumbs a {
+  color: var(--fortico-teal-dark);
+}
+
+#content {
+  padding: 28px;
+}
+
+#content h1,
+#content h2,
+#content h3,
+.module caption,
+.inline-group h2 {
+  color: var(--fortico-navy);
+}
+
+#content h1 {
+  font-weight: 700;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgb(21 155 141 / 34%);
+  outline-offset: 2px;
+}
+
+#nav-sidebar {
+  border-right: 1px solid var(--fortico-line);
+  background: var(--fortico-white);
+}
+
+#nav-sidebar .current-app .section:link,
+#nav-sidebar .current-app .section:visited,
+#nav-sidebar .current-model {
+  color: var(--fortico-teal-dark);
+}
+
+#nav-sidebar a:hover {
+  color: var(--fortico-teal-dark);
+  background: #eaf7f5;
+}
+
+.module,
+.inline-group,
+#changelist,
+.submit-row,
+.form-row,
+.aligned .form-row,
+.messagelist li {
+  border-color: var(--fortico-line);
+}
+
+.module,
+.inline-group,
+#changelist {
+  overflow: hidden;
+  border: 1px solid var(--fortico-line);
+  border-radius: 10px;
+  background: var(--fortico-white);
+  box-shadow: 0 4px 16px rgb(20 38 63 / 4%);
+}
+
+.module h2,
+.module caption,
+.inline-group h2,
+#changelist .paginator {
+  color: var(--fortico-white);
+  background: var(--fortico-navy);
+}
+
+.module h2,
+.inline-group h2 {
+  padding: 12px 16px;
+  font-size: 13px;
+  letter-spacing: .02em;
+}
+
+.module table th,
+.module table td,
+.inline-group table th,
+.inline-group table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--fortico-line);
+}
+
+#result_list thead th {
+  color: var(--fortico-navy);
+  background: #edf3f6;
+}
+
+#result_list tbody tr:nth-child(even) {
+  background: #f8fafb;
+}
+
+#result_list tbody tr:hover {
+  background: #edf8f6;
+}
+
+table a,
+.object-tools a,
+.related-widget-wrapper-link,
+.addlink,
+.changelink {
+  color: var(--fortico-teal-dark);
+}
+
+input,
+select,
+textarea,
+.vTextField,
+.vLargeTextField,
+.vURLField,
+.vDateField,
+.vTimeField {
+  max-width: 100%;
+  border-color: #cbd6df;
+  border-radius: 6px;
+  color: var(--fortico-ink);
+  background-color: var(--fortico-white);
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--fortico-teal);
+  box-shadow: 0 0 0 3px rgb(21 155 141 / 13%);
+}
+
+fieldset,
+.form-row {
+  border-color: var(--fortico-line);
+}
+
+fieldset.module,
+.aligned .form-row {
+  padding: 14px 18px;
+}
+
+.help,
+p.help,
+form p.help,
+div.help,
+form div.help,
+div.help li {
+  color: var(--fortico-muted);
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+button,
+.submit-row input,
+.submit-row a,
+.object-tools a,
+a.button {
+  border-radius: 6px;
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+.submit-row a,
+.object-tools a,
+a.button {
+  border: 1px solid transparent;
+  color: var(--fortico-white);
+  background: var(--fortico-teal);
+  font-weight: 650;
+  transition: background-color .16s ease, border-color .16s ease, transform .16s ease;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.submit-row input:hover,
+.submit-row a:hover,
+.object-tools a:hover,
+a.button:hover {
+  color: var(--fortico-white);
+  background: var(--fortico-teal-dark);
+}
+
+.submit-row input.default,
+input.default,
+.button.default {
+  background: var(--fortico-navy);
+}
+
+.submit-row input.default:hover,
+input.default:hover,
+.button.default:hover {
+  background: var(--fortico-navy-deep);
+}
+
+.deletelink,
+.submit-row a.deletelink,
+.delete-confirmation form input[type="submit"] {
+  color: var(--fortico-white);
+  background: var(--fortico-danger);
+}
+
+.deletelink:hover,
+.submit-row a.deletelink:hover,
+.delete-confirmation form input[type="submit"]:hover {
+  color: var(--fortico-white);
+  background: #842d35;
+}
+
+.messagelist li {
+  margin: 0 0 10px;
+  padding: 12px 16px;
+  border: 1px solid var(--fortico-line);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(20 38 63 / 4%);
+}
+
+.messagelist li.success {
+  border-left: 4px solid var(--fortico-teal);
+}
+
+.messagelist li.error,
+.errornote,
+.errors {
+  border-left: 4px solid var(--fortico-danger);
+  border-radius: 5px;
+}
+
+#changelist-filter {
+  border-left: 1px solid var(--fortico-line);
+  background: var(--fortico-white);
+}
+
+#changelist-filter h2 {
+  color: var(--fortico-white);
+  background: var(--fortico-navy);
+}
+
+#changelist-filter li.selected a {
+  color: var(--fortico-teal-dark);
+}
+
+.fortico-dashboard {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.fortico-welcome {
+  margin: 2px 0 24px;
+  padding: 25px 28px;
+  border: 1px solid #dce8ec;
+  border-left: 4px solid var(--fortico-teal);
+  border-radius: 12px;
+  background: linear-gradient(110deg, #fff 15%, #eff8f7 100%);
+  box-shadow: 0 5px 18px rgb(20 38 63 / 4%);
+}
+
+.fortico-eyebrow {
+  margin: 0 0 7px;
+  color: var(--fortico-teal-dark);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.fortico-welcome h1 {
+  margin: 0 0 8px;
+  color: var(--fortico-navy);
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+}
+
+.fortico-welcome > p:last-child {
+  margin: 0;
+  color: var(--fortico-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.fortico-app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.fortico-app-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--fortico-line);
+  border-radius: 10px;
+  background: var(--fortico-white);
+  box-shadow: 0 4px 16px rgb(20 38 63 / 4%);
+}
+
+.fortico-app-card__header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 18px;
+  border-bottom: 1px solid var(--fortico-line);
+  background: #fbfcfd;
+}
+
+.fortico-app-card__mark {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--fortico-white);
+  background: var(--fortico-teal);
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.fortico-app-card__header .fortico-eyebrow {
+  margin-bottom: 3px;
+}
+
+.fortico-app-card__header h2 {
+  margin: 0;
+  color: var(--fortico-navy);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.fortico-model-list {
+  margin: 0;
+  padding: 0 18px;
+  list-style: none;
+}
+
+.fortico-model-row {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.fortico-model-row:last-child {
+  border-bottom: 0;
+}
+
+.fortico-model-row__name {
+  min-width: 0;
+  color: var(--fortico-ink);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.fortico-model-row__name:hover {
+  color: var(--fortico-teal-dark);
+}
+
+.fortico-model-row__actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.fortico-model-row__actions a {
+  color: var(--fortico-teal-dark);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.fortico-model-row__actions a:hover {
+  text-decoration: underline;
+}
+
+.fortico-empty-state {
+  padding: 20px;
+  border: 1px dashed #c9d7df;
+  border-radius: 8px;
+  color: var(--fortico-muted);
+  background: var(--fortico-white);
+}
+
+body.login #container {
+  width: min(100% - 32px, 520px);
+  margin: clamp(24px, 8vh, 72px) auto 30px;
+  overflow: hidden;
+  border: 1px solid var(--fortico-line);
+  border-radius: 15px;
+  background: var(--fortico-white);
+  box-shadow: 0 18px 55px rgb(13 28 48 / 14%);
+}
+
+body.login #header {
+  min-height: 86px;
+  padding: 16px 24px;
+}
+
+body.login #content {
+  padding: 28px 30px 32px;
+  background: var(--fortico-white);
+}
+
+body.login #content-main {
+  width: 100%;
+  float: none;
+}
+
+.fortico-login-heading {
+  margin: 0 0 23px;
+}
+
+.fortico-login-heading h1 {
+  margin: 0 0 7px;
+  color: var(--fortico-navy);
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+
+.fortico-login-heading > p:last-child {
+  margin: 0;
+  color: var(--fortico-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+body.login #login-form .form-row {
+  padding: 0 0 15px;
+  border: 0;
+}
+
+body.login #login-form label {
+  display: block;
+  margin: 0 0 6px;
+  color: var(--fortico-ink);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+body.login #login-form input[type="text"],
+body.login #login-form input[type="password"] {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd6df;
+  border-radius: 7px;
+  background: #fbfcfd;
+  font-size: 14px;
+}
+
+body.login #login-form input[type="text"]:focus,
+body.login #login-form input[type="password"]:focus {
+  border-color: var(--fortico-teal);
+  background: var(--fortico-white);
+  box-shadow: 0 0 0 3px rgb(21 155 141 / 13%);
+}
+
+body.login #login-form .submit-row {
+  margin: 9px 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+body.login #login-form .submit-row input {
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 7px;
+  color: var(--fortico-white);
+  background: var(--fortico-teal);
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+body.login #login-form .submit-row input:hover {
+  background: var(--fortico-teal-dark);
+}
+
+body.login .errornote,
+body.login #login-form .errorlist {
+  padding: 11px 13px;
+  border: 1px solid #f0c8cc;
+  border-left: 4px solid var(--fortico-danger);
+  border-radius: 6px;
+  color: #782b33;
+  background: #fff5f5;
+}
+
+body.login .errorlist {
+  margin: 0 0 7px;
+  list-style: none;
+}
+
+body.login #footer {
+  padding: 0 20px 16px;
+  color: var(--fortico-muted);
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  #header {
+    padding-inline: 20px;
+  }
+
+  #content {
+    padding: 22px 20px;
+  }
+
+  .fortico-app-grid {
+    gap: 14px;
+  }
+
+  #changelist-filter {
+    width: 100%;
+    margin: 0 0 16px;
+    border: 1px solid var(--fortico-line);
+    border-radius: 8px;
+  }
+
+  #changelist #changelist-form .results {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  #header {
+    min-height: 66px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .fortico-branding a {
+    gap: 10px;
+  }
+
+  .fortico-branding__logo {
+    width: 132px;
+  }
+
+  .fortico-branding__label {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
+  #user-tools {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 3px;
+    font-size: 11px;
+  }
+
+  .breadcrumbs {
+    padding: 10px 14px;
+  }
+
+  #content {
+    padding: 16px 12px 24px;
+  }
+
+  .fortico-app-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fortico-welcome {
+    padding: 19px 18px;
+  }
+
+  .fortico-model-row {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 11px 0;
+  }
+
+  .fortico-model-row__actions {
+    justify-content: flex-start;
+  }
+
+  #changelist .actions,
+  .submit-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .submit-row input,
+  .submit-row a {
+    margin: 0;
+  }
+
+  body.login #container {
+    width: calc(100% - 24px);
+    margin: 24px auto;
+    border-radius: 12px;
+  }
+
+  body.login #header {
+    padding: 13px 17px;
+  }
+
+  body.login #content {
+    padding: 23px 19px 25px;
+  }
+
+  .fortico-login-heading h1 {
+    font-size: 22px;
+  }
+}

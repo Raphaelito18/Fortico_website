@@ -1,0 +1,47 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+  <div id="content-main" class="fortico-dashboard">
+    <section class="fortico-welcome" aria-labelledby="fortico-dashboard-title">
+      <p class="fortico-eyebrow">FORTICO · ESPACE DE GESTION</p>
+      <h1 id="fortico-dashboard-title">Gestion des contenus</h1>
+      <p>Retrouvez ici les contenus du site et les demandes reçues par l’équipe.</p>
+    </section>
+
+    {% if app_list %}
+      <div class="fortico-app-grid">
+        {% for app in app_list %}
+          <section class="fortico-app-card" aria-labelledby="app-heading-{{ app.app_label }}">
+            <header class="fortico-app-card__header">
+              <span class="fortico-app-card__mark" aria-hidden="true">{{ app.name|slice:":1"|upper }}</span>
+              <div>
+                <p class="fortico-eyebrow">ESPACE</p>
+                <h2 id="app-heading-{{ app.app_label }}">{{ app.name }}</h2>
+              </div>
+            </header>
+            <ul class="fortico-model-list">
+              {% for model in app.models %}
+                <li class="fortico-model-row">
+                  <a class="fortico-model-row__name" href="{{ model.admin_url|default:model.add_url }}">{{ model.name }}</a>
+                  <span class="fortico-model-row__actions">
+                    {% if model.admin_url %}
+                      <a href="{{ model.admin_url }}">{% if model.view_only %}Consulter{% else %}Gérer{% endif %}</a>
+                    {% endif %}
+                    {% if model.add_url %}
+                      <a href="{{ model.add_url }}" class="fortico-add-link">Ajouter</a>
+                    {% endif %}
+                  </span>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="fortico-empty-state">Vous n’avez accès à aucun module d’administration.</p>
+    {% endif %}
+  </div>
+{% endblock %}
